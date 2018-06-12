@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <toolshelf name="debug_test" label="Debug Test">
+    <memberTool name="debug_script"/>
+  </toolshelf>
+
+  <tool name="debug_script" label="Debug Script" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[import debug_script
+reload(debug_script)
+debug_script.test()]]></script>
+  </tool>
+</shelfDocument>
